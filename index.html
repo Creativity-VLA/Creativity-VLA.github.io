@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Empowering Visual Creativity:
+    A Vision-Language Assistant to Image Editing Recommendations</title>
+
+  <script type="module"
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+      </div>
+      <div class="container has-text-centered">
+        <h1 class="title is-1 publication-title">
+          Empowering Visual Creativity:
+        </h1>
+        <h3 class="title is-3 publication-title">
+          A Vision-Language Assistant to Image Editing Recommendations
+        </h3>
+        <div class="is-size-5 publication-authors">
+          <div class="author-block">Anonymous</a></div>        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+        <div class="column is-six-fifths">
+          <center><img width=80% src="assets/teaser.png"/></center>
+        </div>
+
+      <div class="columns is-centered has-text-centered">
+      <h2 class="subtitle has-text-justified">
+        In typical editing scenarios, users have the tendency to start with oversimplified text prompts, which we refer to as editing hint, as
+        they are often uncertain about what visual results they desire and the corresponding editing instructions needed to achieve appealing editing
+        results. Given only such coarse hints, modern image editing methods often produce unimpressive results, as shown in part (b). To
+        overcome this, we introduce <b>Creative-VLA</b> which is designed to jointly leverage the visual understanding and creative reasoning capability
+        of Large Vision-Language Models to generate diverse editing instructions, thus achieving the desired visual effect in part (a).
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2, columns is-centered">Pipeline</h2>
+    <center><img width=80% src="assets/pipeline.png"/></center>
+    <td></td>
+    <p>
+      The pipeline of collecting instruction dataset for imagination in editing. Visual understanding, imagining hint-related concepts,
+      reason to generate instruction and dataset curation form a chain of reasoning processes to obtain high-quality data.
+    </p>
+    <br>
+    <br>
+    
+    <center><img width=60% src="assets/model.png"/></center>
+    <td></td>
+    <p>
+      The architecture of Creativity-VLA. It converts input image and editing hints into editing suggestion and editing token, which is
+      used to recommend the locations for editing.
+    </p>
+
+    <hr>
+  </div>
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2, columns is-centered">Comparisons</h2>
+      <hr>
+      <center><img width=100% src="assets/result1.png"/></center>
+      <center><img width=100% src="assets/result2.png"/></center>
+      <center><img width=100% src="assets/result3.png"/></center>
+    <!-- <hr> -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2, columns is-centered">Diversity</h2>
+    <hr>
+    <center><img width=100% src="assets/diversity.png"/></center>
+    <p>Example to show the diversity of Creativity-VLA. This example shows that our Creativity-VLA is beneficial for inspiring
+      creativity (e.g., when designing the spring season’s advertisements to attract customers’ attention)</p>
+  <!-- <hr> -->
+</div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2, columns is-centered">Sequential Editing</h2>
+    <hr>
+    <center><img width=100% src="assets/sequential.png"/></center>
+    <p>Examples of sequential editing with Creativity-VLA. We show that local and global editing can work collaboratively.</p>
+  <!-- <hr> -->
+</div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container content is-max-desktop">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{creativity_vla,
+    author = {Anonymous},
+    title = {Empowering Visual Creativity: A Vision-Language Assistant to Image Editing Recommendations},
+    year = {2023}
+}</code></pre>
+  </div>
+</section>
+
+<script type="text/javascript" src="./static/slick/slick.min.js"></script>
+</body>
+</html>
